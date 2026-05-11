@@ -43,7 +43,6 @@ namespace lab33
             });
         }
 
-        // 🔹 Добавить студента
         private void btnAddStudent_Click(object sender, EventArgs e)
         {
             try
@@ -102,8 +101,6 @@ namespace lab33
                         };
             dataGridView1.DataSource = query.ToList();
         }
-
-        // 🔹 Должники (есть оценка 2)
         private void btnDebtors_Click(object sender, EventArgs e)
         {
             var debtors = students
@@ -121,8 +118,6 @@ namespace lab33
             else
                 MessageBox.Show("Должников не найдено ✓", "Информация");
         }
-
-        // 🔹 Младше 20 лет
         private void btnUnder20_Click(object sender, EventArgs e)
         {
             var young = students
@@ -143,8 +138,6 @@ namespace lab33
             else
                 MessageBox.Show("Студентов младше 20 лет не найдено", "Информация");
         }
-
-        // 🔹 Поиск по группе
         private void btnShowGroup_Click(object sender, EventArgs e)
         {
             string groupName = txtSearchGroup.Text.Trim().ToUpper();
@@ -170,7 +163,6 @@ namespace lab33
                 MessageBox.Show($"Группа \"{groupName}\" не найдена", "Информация");
         }
 
-        // Очистка полей
         private void ClearFields()
         {
             txtStudentId.Clear(); txtLastName.Clear(); txtFirstName.Clear();

@@ -45,7 +45,6 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
 
-            // Labels
             label1.Text = "№ билета:"; label1.Location = new Point(12, 31); label1.Size = new Size(50, 15);
             label2.Text = "Фамилия:"; label2.Location = new Point(12, 60); label2.Size = new Size(50, 15);
             label3.Text = "Имя:"; label3.Location = new Point(12, 89); label3.Size = new Size(50, 15);
@@ -55,56 +54,47 @@
             label7.Text = "Поиск группы:"; label7.Location = new Point(12, 179); label7.Size = new Size(80, 15);
             label8.Text = "Оценки:"; label8.Location = new Point(550, 31); label8.Size = new Size(50, 15);
 
-            // txtStudentId
             txtStudentId.Location = new Point(90, 28);
             txtStudentId.Name = "txtStudentId";
             txtStudentId.Size = new Size(100, 23);
             txtStudentId.TabIndex = 0;
 
-            // txtLastName
             txtLastName.Location = new Point(90, 57);
             txtLastName.Name = "txtLastName";
             txtLastName.Size = new Size(100, 23);
             txtLastName.TabIndex = 1;
 
-            // txtFirstName
             txtFirstName.Location = new Point(90, 86);
             txtFirstName.Name = "txtFirstName";
             txtFirstName.Size = new Size(100, 23);
             txtFirstName.TabIndex = 2;
 
-            // txtPatronymic
             txtPatronymic.Location = new Point(90, 115);
             txtPatronymic.Name = "txtPatronymic";
             txtPatronymic.Size = new Size(100, 23);
             txtPatronymic.TabIndex = 3;
 
-            // dtpDateOfBirth
             dtpDateOfBirth.Location = new Point(90, 147);
             dtpDateOfBirth.Name = "dtpDateOfBirth";
             dtpDateOfBirth.Size = new Size(150, 23);
             dtpDateOfBirth.TabIndex = 4;
             dtpDateOfBirth.Value = DateTime.Today.AddYears(-18);
 
-            // txtSearchGroup
             txtSearchGroup.Location = new Point(90, 176);
             txtSearchGroup.Name = "txtSearchGroup";
             txtSearchGroup.Size = new Size(100, 23);
             txtSearchGroup.TabIndex = 5;
 
-            // txtGroup
             txtGroup.Location = new Point(90, 205);
             txtGroup.Name = "txtGroup";
             txtGroup.Size = new Size(100, 23);
             txtGroup.TabIndex = 6;
 
-            // Grades
             txtGrade1.Location = new Point(550, 28); txtGrade1.Name = "txtGrade1"; txtGrade1.Size = new Size(50, 23); txtGrade1.TabIndex = 7;
             txtGrade2.Location = new Point(550, 57); txtGrade2.Name = "txtGrade2"; txtGrade2.Size = new Size(50, 23); txtGrade2.TabIndex = 8;
             txtGrade3.Location = new Point(550, 86); txtGrade3.Name = "txtGrade3"; txtGrade3.Size = new Size(50, 23); txtGrade3.TabIndex = 9;
             txtGrade4.Location = new Point(550, 115); txtGrade4.Name = "txtGrade4"; txtGrade4.Size = new Size(50, 23); txtGrade4.TabIndex = 10;
 
-            // Buttons
             btnAddStudent.Location = new Point(280, 28); btnAddStudent.Name = "btnAddStudent";
             btnAddStudent.Size = new Size(110, 23); btnAddStudent.Text = "Добавить";
             btnAddStudent.TabIndex = 11; btnAddStudent.Click += btnAddStudent_Click;
@@ -125,15 +115,12 @@
             btnShowGroup.Size = new Size(110, 23); btnShowGroup.Text = "Показать группу";
             btnShowGroup.TabIndex = 15; btnShowGroup.Click += btnShowGroup_Click;
 
-            // DataGridView
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(420, 28);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(350, 200);
             dataGridView1.TabIndex = 16;
-            // 👇 УДАЛЕНО: dataGridView1.CellContentClick += ... (не требуется)
-
-            // Form
+          
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 250);
